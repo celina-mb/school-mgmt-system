@@ -4,3 +4,5 @@ A school can be modeled as a set of classes and objects with various relationshi
 
 Within the repository, you can find the files needed for execution. Thanks for visiting!
 
+# Class diagram
+![image](https://github.com/user-attachments/assets/08c29712-46e4-41f9-b0bd-caa3f543057e)
