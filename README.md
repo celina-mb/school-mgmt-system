@@ -1,8 +1,6 @@
 # School Management System
 This repository contains a comprehensible and user-friendly  School Management System.
-This problem seems interesting to me, as a school has a whole lot of different "actors" which can have different roles. For instance, there are professors, classes, students, attendance, directors, among others. They all interact in different ways and the information related to every "actor" changes. Therefore, I find that a School Management System can be a great first project to apply the principles of Object Oriented Programming.
+A school can be modeled as a set of classes and objects with various relationships, such as inheritance and composition. In this project, there is the role of Admin, a person who can edit and assign the roles of Student and Teacher. The Course class, exhibits a composition relationship with the Equipment class (can be lab equipment or just usual classroom furniture). Student, Teacher and Admin belong to the Person superclass, thus having common elements, such as name, last name and address. However, each of those subclasses has their very own attributes and methods. In this way, the project allows to create and update a database with the information of students, teachers, courses, and equipment.
 
-# What I would like to achieve
-For example, a student is assigned to a various number of courses, has a student ID and for every course assigned, has attendance and grades. In this way, there is a lot of information related to a student. I would also like to find a way to filter the information a user has access to, so that students and parents can consult the gradebook but not edit its contents. Moreover, I want my code to be able to display grades, search/filter by student, update an existing student's information and add/remove students.
-
+Within the repository, you can find the files needed for execution. Thanks for visiting!
 
