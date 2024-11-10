@@ -12,7 +12,7 @@ private:
 public:
     Course(int courseKey, int courseSize, std::string teacherId, std::string courseName, int equipmentId);
     
-    std::string getCourseDetails();
+    string getCourseDetails();
 };
 
 #endif
