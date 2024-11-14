@@ -11,9 +11,15 @@ protected:
     int age;
 
 public:
-    Person(string name, string lastName, string address, int age);
+    Person(string, string, string, int);
 
-    string getPersonDetails();
+    string getName();
+    string getLastName();
+    string getFullName();
+    int getAge();
+    string getAdress();
+    int setAge(int);
+    string getPersonData();
 };
 
 #endif
