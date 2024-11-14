@@ -1,5 +1,6 @@
 #include "Course.h"
-
+using namespace std;
+Course::Course(int _key, int _duration, string _courseName, Lab _lab, vector<Student> _students, Teacher _teacher){
     int getCourseKey();
     int getCourseDuration();
     std::string getCourseName();
@@ -12,13 +13,17 @@ int Course::getCourseKey()
     return courseKey;
 }
 
-void Course::setTeacher(Teacher t1)
+int Course::getCourseDuration()
 {
-    courseTeacher=t1;
+    return courseDuration;
 }
-void Course::addStudent(Student s1)
+void Course::setTeacher(Teacher _teacher)
 {
-    courseStudents.push_back(s1);
+    courseTeacher=_teacher;
+}
+void Course::addStudent(Student _student)
+{
+    courseStudents.push_back(_student);
 }
 
 void Course::removeStudent(string id)
@@ -30,8 +35,4 @@ void Course::removeStudent(string id)
 std::string Course::courseDetails()
 {
     return std::string();
-}
-
-Course::Course(int courseKey, int courseSize, std::string teacherId, std::string courseName, int equipmentId)
-{
 }
