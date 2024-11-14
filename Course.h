@@ -2,22 +2,23 @@
 #define COURSE_H
 
 #include <string>
+using namespace std;
 
 class Course {
 private:
     int courseKey;
     int courseDuration;
-    std::string courseName;
+    string courseName;
     Lab courseLab;
     vector<Student> courseStudents;
     Teacher courseTeacher;
     
 public:
-    Course(int, int, std::string, Lab, vector<Student>, Teacher);
+    Course(int, int, string, Lab, vector<Student>, Teacher);
     
     int getCourseKey();
     int getCourseDuration();
-    std::string getCourseName();
+    string getCourseName();
     Lab getCourseLab();
     vector<Student> getCourseStudents();
     void addStudent(Student);
