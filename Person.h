@@ -6,19 +6,16 @@ using namespace std;
 class Person {
 protected:
     string name;
-    string lastName;
-    string address;
     int age;
+    string address;
 
 public:
-    Person(string, string, string, int);
+    Person(string name, int age, string address);
 
     string getName();
-    string getLastName();
-    string getFullName();
     int getAge();
-    string getAdress();
-    int setAge(int);
+    void setAge(int);
+    string getAddress();
     string getPersonData();
 };
 
