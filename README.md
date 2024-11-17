@@ -59,7 +59,7 @@ getLabDetails(): Displays the lab's specific details as a string.
 
 ## Key Relationships
 ### 1. Inheritance
-Person is the superlass for both Student and Teacher, setting apart common attributes helps to reuse code and make the problem-solving process simpler.
+Person is the superclass for both Student and Teacher, setting apart common attributes helps to reuse code and make the problem-solving process simpler.
 ### 2. Composition
 Course is composed of the following classes:
 Teacher: A course cannot exist without an associated teacher.
