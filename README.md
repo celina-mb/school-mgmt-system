@@ -4,7 +4,7 @@ The School Management System is a simple, user-friendly program designed to mana
 This README provides an overview of the system's classes, their relationships, and how they interact.
 
 ## Classes and Relationships
-1. Person (Superclass):
+### 1. Person (Superclass):
   Class that sets common attributes and methods for both students and teachers.
 Attributes:
 name: The name of the person.
