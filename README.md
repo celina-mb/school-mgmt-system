@@ -33,7 +33,7 @@ getTeacherDetails(): Displays the teacher's specific details.
 getters to access the rest of attributes individually as a string.
 
 ### 4. Course
-### Description:
+Description:
 Represents a course in the system, containing information about the associated teacher, students, and lab.
 Attributes:
 courseKey: The unique code of the course.
