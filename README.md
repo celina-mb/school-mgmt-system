@@ -1,5 +1,4 @@
 # School Management System
-Overview
 The School Management System is a simple, user-friendly program designed to manage various components of a school effectively. It uses OOP principles such as inheritance and composition to improve the program's efficiency. The system manages the following classes: Student, Teacher, Course, Lab, and a Person superclass that sets the base for Student and Teacher.
 This README provides an overview of the system's classes, their relationships, and how they interact.
 
