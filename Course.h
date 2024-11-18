@@ -9,22 +9,24 @@ private:
     int courseKey;
     int courseDuration;
     string courseName;
-    Lab courseLab;
-    vector<Student> courseStudents;
-    Teacher courseTeacher;
+    Teacher teacher;
+    Student student;
+    Lab lab;
+
     
 public:
-    Course(int, int, string, Lab, vector<Student>, Teacher);
+    Course(int, int, string, Teacher, Student, Lab);
     
     int getCourseKey();
     int getCourseDuration();
     string getCourseName();
-    Lab getCourseLab();
-    vector<Student> getCourseStudents();
-    void addStudent(Student);
-    void removeStudent(string);
-    Teacher getCourseTeacher();
+    Teacher getTeacher();
+    Student getStudent();
+    Lab getLab();
+    void setCourseDuration(int);
+    void setStudent(Student);
     void setTeacher(Teacher);
+    void setLab(Lab);
     string getCourseDetails();
 };
 
