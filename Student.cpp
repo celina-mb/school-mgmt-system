@@ -27,8 +27,8 @@ void Student::setSemester(int _semester){
     semester=_semester;
 }
 
-void Student::setAvg(int _avrg){
-avg=_avg;
+void Student::setAvrg(int _avrg){
+avrg=_avrg;
 }
 
 string Student::getStudentDetails(){
