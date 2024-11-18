@@ -2,16 +2,21 @@
 #define TEACHER_H
 
 #include <string>
-#include "Course.h"
 using namespace std;
+#include "Person.h"
 
-class Teacher {
+class Teacher:public Person {
     private:
-    string teacherId;
-    string courseKey;
+    string teacherID;
+    int teachingHours;
 
     public:
-    Teacher(string teacherId, string courseKey);
+    Teacher(string name, int age, string address, string teacherID, int teachingHours);
+
+    string getTeacherID();
+    int getTeachingHours();
+
+    void setTeachingHours(int hours):
 
     string getTeacherDetails();
 };
