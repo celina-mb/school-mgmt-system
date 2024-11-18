@@ -31,7 +31,12 @@ string Course::getCourseName()
 //métodos setters
 void Course::setTeacher(Teacher _teacher)
 {
-    courseTeacher=_teacher;
+    teacher=_teacher;
+}
+
+void Course::setStudent(Student _student)
+{
+    student=_student;
 }
 
 string Course::courseDetails()
