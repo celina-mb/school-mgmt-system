@@ -33,18 +33,7 @@ void Course::setTeacher(Teacher _teacher)
 {
     courseTeacher=_teacher;
 }
-/*
-void Course::addStudent(Student _student)
-{
-    courseStudents.push_back(_student);
-}
 
-void Course::removeStudent(string id)
-{
-    for(int i=0;)
-        //investigar como se hace esto
-}
-*/
 string Course::courseDetails()
 {
     return "Course Key: " + to_string(courseKey) + ", Name: " + courseName + ", Duration: " + to_string(courseDuration) + ", "
