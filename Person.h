@@ -16,7 +16,7 @@ public:
     int getAge();
     void setAge(int);
     string getAddress();
-    string getPersonData();
+    string getPersonDetails();
 };
 
 #endif
