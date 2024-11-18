@@ -5,12 +5,14 @@ using namespace std;
 
 class Lab{
     private:
+    int labCode;
     string labType;
     int labSize;
 
     public:
-    Lab(string labType, int labSize);
+    Lab(int labCode; string labType, int labSize);
 
+    int getLabCode();
     string getLabType();
     int getLabSize();
     string getLabDetails();
