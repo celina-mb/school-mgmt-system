@@ -83,7 +83,8 @@ NOTE:
 For this current implementation (as of Nov 17th, there are NO lists for the students enrolled to a class, HOWEVER they'll be implemented soon :D)
 
 ## Class diagram
-![image](https://github.com/user-attachments/assets/abb848ed-225f-448e-8684-bc06844eae77)
+![image](https://github.com/user-attachments/assets/8696f035-cb07-4718-bc9c-176716daa3ef)
+
 
 
 
