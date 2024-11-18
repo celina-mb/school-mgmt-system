@@ -1,9 +1,10 @@
 #include "Course.h"
 using namespace std;
+#include <string>
 
 //constructor creo
-Course::Course(int _key, int _duration, string _courseName, Lab _lab, vector<Student> _students, Teacher _teacher){
-    :
+Course::Course(int key, int _duration, string _courseName, Lab _lab, vector<Student> _students, Teacher _teacher)
+    :name(name)
 
 //métodos getters
 int Course::getCourseKey()
