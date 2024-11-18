@@ -12,6 +12,7 @@ class Lab{
     public:
     Lab(int labCode; string labType, int labSize);
 
+    void setLabSize(int labSize);
     int getLabCode();
     string getLabType();
     int getLabSize();
