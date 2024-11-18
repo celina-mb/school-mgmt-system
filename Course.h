@@ -1,6 +1,9 @@
 #ifndef COURSE_H
 #define COURSE_H
 
+#include "Teacher.h"
+#include "Student.h"
+#include "Lab.h"
 #include <string>
 using namespace std;
 
@@ -15,7 +18,7 @@ private:
 
     
 public:
-    Course(int, int, string, Teacher, Student, Lab);
+    Course(int courseKey, int courseDuration, string courseName, Teacher teacher, Student student, Lab lab);
     
     int getCourseKey();
     int getCourseDuration();
@@ -23,10 +26,12 @@ public:
     Teacher getTeacher();
     Student getStudent();
     Lab getLab();
-    void setCourseDuration(int);
-    void setStudent(Student);
-    void setTeacher(Teacher);
-    void setLab(Lab);
+
+    void setCourseDuration(int courseDuration);
+    void setStudent(Student student);
+    void setTeacher(Teacher teacher);
+    void setLab(Lab lab);
+
     string getCourseDetails();
 };
 
