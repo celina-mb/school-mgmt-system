@@ -5,7 +5,7 @@
 using namespace std;
 #include "Person.h"
 
-class Teacher:public Person {
+class Teacher : public Person {
     private:
     string teacherID;
     int teachingHours;
@@ -16,7 +16,7 @@ class Teacher:public Person {
     string getTeacherID();
     int getTeachingHours();
 
-    void setTeachingHours(int hours):
+    void setTeachingHours(int hours);
 
     string getTeacherDetails();
 };
