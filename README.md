@@ -6,43 +6,40 @@ This README provides an overview of the system's classes, their relationships, h
 ### 1. Person (Superclass):
 **Description:** Class that sets common attributes and methods for both students and teachers.
 **Attributes:**
-name: The name of the person.
-age: The age of the person.
-address: The address of the person.
+_name:_ The name of the person.
+_age:_ The age of the person.
+_address:_ The address of the person.
 **Methods:**
-getters for each of the individual attributes as well as a getter for the entire information condensend into a string (getPersonDetails()), a setter for age as it changes over time and might need to be updated.
+_getters_ for each of the individual attributes as well as a _getter_ for the entire information condensend into a string (getPersonDetails()), a _setter_ for age as it changes over time and might need to be updated.
 
 ### 2. Student (Subclass derived from Person):
 **Description:** Represents a student, inheriting from the Person class. Adds attributes specific to students such as ID and semester.
-Attributes:
-semester: the semester a student is enrolled in
-studentID: a string starting with S which holds the unique identifier for a student
-Methods:
-getters for each individual attribute
-setter for the semester as it changes constantly
-getStudentDetails(): Displays the student's specific details.
+**Attributes:**
+_semester:_ the semester a student is enrolled in
+_studentID:_ a string starting with S which holds the unique identifier for a student
+**Methods:**
+_getters_ for each individual attribute
+_setter_ for the semester as it changes constantly
+_getStudentDetails():_ Displays the student's specific details.
 
 ### 3. Teacher (Subclass derived from Person)
 **Description:** Represents a teacher, inheriting from the Person class. Adds attributes specific to teachers such as teacherID and teachingHours (how many hours a Teacher teachs per day).
 **Attributes:**
-teacherID: a string starting with T which holds the unique identifier for a teacher
-teachingHours: the number of hours a teacher teachs per day.
+_teacherID:_ a string starting with T which holds the unique identifier for a teacher
+_teachingHours:_ the number of hours a teacher teachs per day.
 **Methods:**
-setTeachingHours(int): void: To update the hours a teacher teachs.
-getTeacherDetails(): Displays the teacher's specific details.
-getters to access the rest of attributes individually as a string.
+_setTeachingHours(int): void:_ To update the hours a teacher teachs.
+_getTeacherDetails():_ Displays the teacher's specific details.
+_getters_ to access the rest of attributes individually as a string.
 
 ### 4. Course
 **Description:** Represents a course in the system, containing information about the associated teacher, students, and lab.
 **Attributes:**
-courseKey: The unique code of the course.
-courseName: The name of the course.
-teacher: A composition relationship with the Teacher class, as a course cannot exist without a teacher.
-students: A list of Student objects (linked with Course through composition), representing the enrolled students.
-lab: A composition relationship with the Lab class, representing the lab associated with the course.
+_courseKey:_ The unique code of the course. _courseName:_ The name of the course.
+_teacher:_ A composition relationship with the Teacher class, as a course cannot exist without a teacher. _students[28]:_ An array of  28 Student objects (linked with Course through composition), representing the enrolled students. The size of the array was selected, following recommendations from Chingos and Whitehurst, regarding class size for education in the United States. (Chingos, M and Whitehurst, G.J. (2011). _Class Size: What Research Says and What it Means for State Policy._ https://www.brookings.edu/articles/class-size-what-research-says-and-what-it-means-for-state-policy/)
+_lab:_ A composition relationship with the Lab class, representing the lab associated with the course.
 **Methods:**
-addStudent(student):void: this  allows to add an instance of the class Student to the course.
-displayCourseDetails(): Displays detailed information about the course as a string, including the teacher, students, and lab.
+_addStudent(student):void:_ this  allows to add an instance of the class Student to the course. _displayCourseDetails():_ Displays detailed information about the course as a string, including the teacher, students, and lab.
 
 ### 5. Lab
 **Description:** Represents a laboratory associated with a course.
@@ -57,12 +54,12 @@ getLabDetails(): Displays the lab's specific details as a string.
 
 ## Key Relationships
 ### 1. Inheritance
-Person is the superclass for both Student and Teacher, setting apart common attributes helps to reuse code and make the problem-solving process simpler.
+**Person** is the superclass for both **Student** and **Teacher**, setting apart common attributes helps to reuse code and make the problem-solving process simpler.
 ### 2. Composition
-Course is composed of the following classes:
-Teacher: A course cannot exist without an associated teacher.
-Students: A course includes a group of students.
-Lab: A lab exists as a part of a course (some examples of Lab are science, computer, bio, chemistry and so on).
+**Course** is composed of the following classes:
+**Teacher:** A course cannot exist without an associated teacher.
+**Students:** A course includes a group of students.
+**Lab:** A lab exists as a part of a course (some examples of Lab are science, computer, bio, chemistry and so on).
 
 ## System Functionality
 **Add New Students and Teachers:** Create objects of Student and Teacher with personalized attributes, using the constructor for each class.
@@ -75,7 +72,7 @@ NOTE:
 For this current implementation (as of Nov 17th, there are NO lists for the students enrolled to a class, HOWEVER they'll be implemented soon :D)
 
 ## Usage instructions
-Upon starting the program, a menu is displayed with numeric options for the user to select one. The options are as follows: 
+Upon starting the program, a menu is displayed with numeric options for the user to select one. The options available are as follow: Add Student (to an existing class), Remove Student (to an existing class), Create Class, Assign Teacher (to an existing class)
 
 ## Class diagram
 ![image](https://github.com/user-attachments/assets/726df01a-8ca8-4670-b71c-37c284ba87b2)
