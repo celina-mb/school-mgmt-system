@@ -75,7 +75,8 @@ For this current implementation (as of Nov 17th, there are NO lists for the stud
 Upon starting the program, a menu is displayed with numeric options for the user to select one. The options available are as follow: Add Student (to an existing class), Remove Student (to an existing class), Create Class, Assign Teacher (to an existing class)
 
 ## Class diagram
-![image](https://github.com/user-attachments/assets/726df01a-8ca8-4670-b71c-37c284ba87b2)
+![image](https://github.com/user-attachments/assets/57b03ac2-25e9-4f8f-8c8d-11e598e96653)
+
 
 
 
