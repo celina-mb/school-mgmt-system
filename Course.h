@@ -7,13 +7,15 @@
 #include <string>
 using namespace std;
 
+const int maxStudents = 18; 
+
 class Course {
 private:
     int courseKey;
     int courseDuration;
     string courseName;
     Teacher teacher;
-    Student students[18];
+    Student students[maxStudents];
     Lab lab;
     int studentsEnrolled;
 
@@ -29,7 +31,8 @@ public:
     Lab getLab();
 
     void setCourseDuration(int courseDuration);
-    void setStudent(Student student);
+    void addStudent(Student student);
+    void removeStudent(string studentID);
     void setTeacher(Teacher teacher);
     void setLab(Lab lab);
 
