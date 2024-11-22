@@ -71,7 +71,7 @@ void Course::setCourseDuration(int _courseDuration)
 //special method to retrieve the entire information of the course
 string Course::courseDetails()
 {
-    string details = "Course Key: " + to_string(courseKey) + ", Name: " + courseName + ", Duration: " + to_string(courseDuration) + "hours.\n"
+    string details = "Course Key: " + to_string(courseKey) + ", Name: " + courseName + ", Duration: " + to_string(courseDuration) + "hours.\n";
     details += "Teacher: " + teacher.getTeacherDetails() + "\n";
     details += "Lab: " + lab.getLabDetails() + "\n";
     details += "Enrolled Students: " + std::to_string(studentsEnrolled) + "\n";
