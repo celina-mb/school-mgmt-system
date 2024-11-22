@@ -20,7 +20,7 @@ int Lab::getLabSize(){
     return labSize;
 }
 
-void Lab::setLabSize(int labSize) {
+void Lab::setLabSize(int _labSize) {
     labSize=_labSize;
 }
 
