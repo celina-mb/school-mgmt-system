@@ -13,8 +13,9 @@ private:
     int courseDuration;
     string courseName;
     Teacher teacher;
-    Student student;
+    Student students[18];
     Lab lab;
+    int studentsEnrolled;
 
     
 public:
