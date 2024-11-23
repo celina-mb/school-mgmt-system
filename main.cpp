@@ -25,7 +25,9 @@ int main() {
 
         if (choice == 1) {
             cout << "\n" << course.getCourseDetails() << "\n";
-        } else if (choice == 2) {
+        } 
+            
+        else if (choice == 2) {
             string name, address, studentID;
             int age, semester;
             double avrg;
@@ -52,28 +54,38 @@ int main() {
 
             course.addStudent(Student(name, age, address, studentID, semester, avrg));
             cout << "Student added successfully :D\n";
-        } else if (choice == 3) {
+        } 
+            
+        else if (choice == 3) {
             string studentID;
             cout << "Enter student ID to remove: ";
             cin >> studentID;
             course.removeStudent(studentID);
             cout << "Student removed successfully :D\n";
-        } else if (choice == 4) {
+        } 
+            
+        else if (choice == 4) {
             int duration;
             cout << "Enter new course duration (weeks): ";
             cin >> duration;
             course.setCourseDuration(duration);
             cout << "Course duration (weeks) updated successfully :D\n";
-        } else if (choice == 5) {
+        } 
+            
+        else if (choice == 5) {
             int size;
             cout << "Enter new lab size: ";
             cin >> size;
             Lab updatedLab(lab.getLabCode(), lab.getLabType(), size);
             cout << "Lab size updated successfully! :D";
         
-        } else if (choice == 6) {
+        } 
+        
+        else if (choice == 6) {
             cout << "Exiting program.\n";
-        } else {
+        } 
+        
+        else {
             cout << "Invalid choice. Please try again.\n";
         }
     }
