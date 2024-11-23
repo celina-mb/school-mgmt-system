@@ -1,18 +1,12 @@
 #include "Course.h"
-using namespace std;
+#include <iostream>
 #include <string>
+using namespace std;
 
-//constructor creo
-Course::Course(int _courseKey, int _courseDuration, string _courseName, Teacher _teacher, Student _student, Lab _lab){
-    courseKey=_courseKey;
-    courseDuration=_courseDuration;
-    courseName=_courseName;
-    teacher=_teacher;
-    student=_student;
-    lab=_lab;
-}
+Course::Course(int _courseKey, int _courseDuration, string _courseName, Teacher _teacher, Lab _lab)
+    : courseKey(_courseKey), courseDuration(_courseDuration), courseName(_courseName), teacher(_teacher), lab(_lab) {}
 
-//métodos getters
+//getters
 int Course::getCourseKey()
 {
     return courseKey;
@@ -38,7 +32,7 @@ Lab Course::getLab()
     return lab;
 }
 
-//extra methods
+//student methods
 void Course::addStudent(const Student& student) {
     if (studentsEnrolled < MAX_STUDENTS) {
         students[studentsEnrolled++] = student;
@@ -74,9 +68,12 @@ string Course::courseDetails()
     string details = "Course Key: " + to_string(courseKey) + ", Name: " + courseName + ", Duration: " + to_string(courseDuration) + "hours.\n";
     details += "Teacher: " + teacher.getTeacherDetails() + "\n";
     details += "Lab: " + lab.getLabDetails() + "\n";
-    details += "Enrolled Students: " + std::to_string(studentsEnrolled) + "\n";
-    for (int i = 0; i < studentsEnrolled; ++i) {
-        details += students[i].getStudentDetails() + "\n";
+    details += "Enrolled Students: "; 
+    for (size_t i = 0; i < students.size(); ++i) {
+        details += students[i].getStudentDetails();
+        if (i < students.size() - 1) {
+            details += "; ";
+        }
     }
-    return details;    
+    return details;
 }
