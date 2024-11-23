@@ -66,14 +66,12 @@ getLabDetails(): Displays the lab's specific details as a string.
 **Lab:** A lab exists as a part of a course (some examples of Lab are science, computer, bio, chemistry and so on).
 
 ## System Functionality
-**Add New Students and Teachers:** Create objects of Student and Teacher with personalized attributes, using the constructor for each class.
-**Modify attributes of objects of all classes:** Update age, courseKey, semester, and so on
+**Add New Students and remove them:** Create objects of Student with personalized attributes, using the constructor for each class.
+**Modify labSize and teachingHours:** Updates these key attributes for the Lab and Teacher objects.
 **Assign Teachers to Courses:** Link a Teacher object to a specific Course.
-**Enroll/Delete Students in Courses:** Add and remove Student objects to a Course.
 **Associate Labs with Courses:** Define a Lab and link it to a Course.
 **Retrieve Details:** Retrieve a Course's entire information into a string such as associated teacher, students, and lab.
-NOTE: 
-For this current implementation (as of Nov 17th, there are NO lists for the students enrolled to a class, HOWEVER they'll be implemented soon :D)
+
 
 ## Usage instructions
 Upon starting the program, a menu is displayed with numeric options for the user to select one. The options available are as follow: Add Student (to an existing class), Remove Student (to an existing class), Modify the labSize and modify the teachingHours of a professor. The option to display the information of the course is also available and the sixth option allows the user to exit the program.
