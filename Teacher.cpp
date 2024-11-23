@@ -2,24 +2,25 @@
 #include <string>
 using namespace std;
 
-Teacher::Teacher(string _name, int _age, string _address, string _teacherId, string _teachingHours)
-  :Person(_name, _age, _address){
-  teacherID = _teacherID;
-  teachingHours = _teachingHours;
-}
+//constructor
+Teacher::Teacher(string name, int age, string address, string teacherID, int teachingHours)
+    : Person(name, age, address), teacherID(teacherID), teachingHours(teachingHours) {}
 
-string Teacher::getTeacherID(){
+//getters
+string Teacher::getTeacherID() {
     return teacherID;
 }
 
-int Teacher::getTeachingHours(){
+int Teacher::getTeachingHours() {
     return teachingHours;
 }
 
+//setter
 void Teacher::setTeachingHours(int _teachingHours) {
     teachingHours = _teachingHours;
 }
 
-string Teacher::getTeacherDetails(){
+//special getter to retrieve the teacher information as a string
+string Teacher::getTeacherDetails() {
     return getPersonDetails() + ", TeacherID: " + teacherID + ", Teaching Hours: " + to_string(teachingHours);
 }
