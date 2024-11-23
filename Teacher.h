@@ -3,7 +3,7 @@
 
 #include <string>
 using namespace std;
-#include "Person.h"
+#include "Person.h" //because of inheritance 
 
 class Teacher : public Person {
     private:
@@ -11,13 +11,17 @@ class Teacher : public Person {
         int teachingHours;
 
     public:
+        //constructor
         Teacher(string name, int age, string address, string teacherID, int teachingHours);
 
+        //getters
         string getTeacherID();
         int getTeachingHours();
 
+        //setters (the teacherID won't change from the one assigned by using the constructor)
         void setTeachingHours(int hours);
 
+        //special method to get all details into a string
         string getTeacherDetails();
 };
 
