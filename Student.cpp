@@ -2,36 +2,33 @@
 #include <string>
 using namespace std;
 
-Student::Student(string _name, int _age, string _address, string _studentID, int _semester, double _avrg)
-{
-    name=_name;
-    age=_age;
-    address=_address;
-    studentID=_studentID;
-    semester=_semester;
-    avrg=_avrg;
-}
+//constructor
+Student::Student(string name, int age, string address, string studentID, int semester, double avrg)
+    : Person(name, age, address), studentID(studentID), semester(semester), avrg(avrg) {}
 
-string Student::getStudentID(){
+//getters
+string Student::getStudentID() {
     return studentID;
 }
 
-int Student::getSemester(){
+int Student::getSemester() {
     return semester;
 }
 
-int Student::getAvrg(){
+int Student::getAvrg() {
     return avrg;
 
-void Student::setSemester(int _semester){
+//setters
+void Student::setSemester(int _semester) {
     semester=_semester;
 }
 
-void Student::setAvrg(int _avrg){
+void Student::setAvrg(int _avrg) {
 avrg=_avrg;
 }
 
-string Student::getStudentDetails(){
+//special getter for all the student details
+string Student::getStudentDetails() {
     return getPersonDetails() + ", StudentID: " + studentID + ", Semester: " + 
            to_string(semester) + ", Average: " + to_string(avrg);
 }
