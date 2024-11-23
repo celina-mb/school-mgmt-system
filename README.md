@@ -17,16 +17,17 @@ _getters_ for each of the individual attributes as well as a _getter_ for the en
 **Attributes:**
 _semester:_ the semester a student is enrolled in
 _studentID:_ a string starting with S which holds the unique identifier for a student
+_avrg:_ represents a student's GPA
 **Methods:**
 _getters_ for each individual attribute
-_setter_ for the semester as it changes constantly
+_setter_ for the semester and GPA as it changes constantly
 _getStudentDetails():_ Displays the student's specific details.
 
 ### 3. Teacher (Subclass derived from Person)
-**Description:** Represents a teacher, inheriting from the Person class. Adds attributes specific to teachers such as teacherID and teachingHours (how many hours a Teacher teachs per day).
+**Description:** Represents a teacher, inheriting from the Person class. Adds attributes specific to teachers such as teacherID and teachingHours (how many hours a Teacher teachs per week).
 **Attributes:**
 _teacherID:_ a string starting with T which holds the unique identifier for a teacher
-_teachingHours:_ the number of hours a teacher teachs per day.
+_teachingHours:_ the number of hours a teacher teachs per week.
 **Methods:**
 _setTeachingHours(int): void:_ To update the hours a teacher teachs.
 _getTeacherDetails():_ Displays the teacher's specific details.
@@ -36,10 +37,13 @@ _getters_ to access the rest of attributes individually as a string.
 **Description:** Represents a course in the system, containing information about the associated teacher, students, and lab.
 **Attributes:**
 _courseKey:_ The unique code of the course. _courseName:_ The name of the course.
-_teacher:_ A composition relationship with the Teacher class, as a course cannot exist without a teacher. _students[28]:_ An array of  28 Student objects (linked with Course through composition), representing the enrolled students. The size of the array was selected, following recommendations from Chingos and Whitehurst, regarding class size for education in the United States. (Chingos, M and Whitehurst, G.J. (2011). _Class Size: What Research Says and What it Means for State Policy._ https://www.brookings.edu/articles/class-size-what-research-says-and-what-it-means-for-state-policy/)
+_teacher:_ A composition relationship with the Teacher class, as a course cannot exist without a teacher. _vector<Student>:_ A vector of maximum 18 Student objects (linked with Course through composition), representing the enrolled students. The size of the array was selected, following recommendations from Chingos and Whitehurst, regarding class size for education in the United States. (Chingos, M and Whitehurst, G.J. (2011). _Class Size: What Research Says and What it Means for State Policy._ https://www.brookings.edu/articles/class-size-what-research-says-and-what-it-means-for-state-policy/)
 _lab:_ A composition relationship with the Lab class, representing the lab associated with the course.
 **Methods:**
-_addStudent(student):void:_ this  allows to add an instance of the class Student to the course. _displayCourseDetails():_ Displays detailed information about the course as a string, including the teacher, students, and lab.
+_addStudent(student):void:_ this  allows to add an instance of the class Student to the course. 
+_removeStudent(studentID):void:_ allows to remove a student with just a Student ID
+_getters:_ for all attributes to access them individually
+_displayCourseDetails():_ Displays detailed information about the course as a string, including the teacher, students, and lab.
 
 ### 5. Lab
 **Description:** Represents a laboratory associated with a course.
@@ -72,10 +76,11 @@ NOTE:
 For this current implementation (as of Nov 17th, there are NO lists for the students enrolled to a class, HOWEVER they'll be implemented soon :D)
 
 ## Usage instructions
-Upon starting the program, a menu is displayed with numeric options for the user to select one. The options available are as follow: Add Student (to an existing class), Remove Student (to an existing class), Modify the labSize and modify the teachingHours of a professor. 
+Upon starting the program, a menu is displayed with numeric options for the user to select one. The options available are as follow: Add Student (to an existing class), Remove Student (to an existing class), Modify the labSize and modify the teachingHours of a professor. The option to display the information of the course is also available and the sixth option allows the user to exit the program.
 
 ## Class diagram
-![image](https://github.com/user-attachments/assets/57b03ac2-25e9-4f8f-8c8d-11e598e96653)
+![image](https://github.com/user-attachments/assets/2f980e69-7be7-415e-a870-545f22d1cf71)
+
 
 
 
