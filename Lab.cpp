@@ -7,15 +7,15 @@ Lab::Lab(int _labCode, string _labType, int _labSize)
   : labCode(_labCode), labType(_labType), labSize(_labSize) {}
 
 //getters
-int Lab::getLabCode(){
+int Lab::getLabCode() {
     return labCode;
 }
 
-string Lab::getLabType(){
+string Lab::getLabType() {
     return labType;
 }
 
-int Lab::getLabSize(){
+int Lab::getLabSize() {
     return labSize;
 }
 
@@ -25,6 +25,6 @@ void Lab::setLabSize(int _labSize) {
 }
 
 // returns all lab data as a string
-string Lab::getLabDetails(){
+string Lab::getLabDetails() {
     return "Lab Code: " + to_string(labCode) + ", Lab Type: " + labType + ", Lab Size: " + to_string(labSize);
 }
