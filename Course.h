@@ -21,7 +21,7 @@ private:
 
     
 public:
-    Course(int courseKey, int courseDuration, string courseName, Teacher teacher, Student student, Lab lab);
+    Course(int courseKey, int courseDuration, string courseName, Teacher teacher, Lab lab);
     
     int getCourseKey();
     int getCourseDuration();
