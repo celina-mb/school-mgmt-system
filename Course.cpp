@@ -7,28 +7,23 @@ Course::Course(int _courseKey, int _courseDuration, string _courseName, Teacher 
     : courseKey(_courseKey), courseDuration(_courseDuration), courseName(_courseName), teacher(_teacher), lab(_lab) {}
 
 //getters
-int Course::getCourseKey()
-{
+int Course::getCourseKey() {
     return courseKey;
 }
 
-int Course::getCourseDuration()
-{
+int Course::getCourseDuration() {
     return courseDuration;
 }
 
-string Course::getCourseName()
-{
+string Course::getCourseName() {
     return courseName;
 }
 
-Teacher Course::getTeacher()
-{
+Teacher Course::getTeacher() {
     return teacher;
 }
 
-Lab Course::getLab()
-{
+Lab Course::getLab() {
     return lab;
 }
 
@@ -52,19 +47,16 @@ void Course::removeStudent(const std::string& studentID) {
 }
 
 //setters
-void Course::setTeacher(Teacher _teacher)
-{
+void Course::setTeacher(Teacher _teacher) {
     teacher=_teacher;
 }
 
-void Course::setCourseDuration(int _courseDuration)
-{
+void Course::setCourseDuration(int _courseDuration) {
     courseDuration = _courseDuration;
 }
 
 //special method to retrieve the entire information of the course
-string Course::courseDetails()
-{
+string Course::courseDetails() {
     string details = "Course Key: " + to_string(courseKey) + ", Name: " + courseName + ", Duration: " + to_string(courseDuration) + "hours.\n";
     details += "Teacher: " + teacher.getTeacherDetails() + "\n";
     details += "Lab: " + lab.getLabDetails() + "\n";
