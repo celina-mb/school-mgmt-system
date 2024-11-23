@@ -72,7 +72,7 @@ NOTE:
 For this current implementation (as of Nov 17th, there are NO lists for the students enrolled to a class, HOWEVER they'll be implemented soon :D)
 
 ## Usage instructions
-Upon starting the program, a menu is displayed with numeric options for the user to select one. The options available are as follow: Add Student (to an existing class), Remove Student (to an existing class), Create Class, Assign Teacher (to an existing class)
+Upon starting the program, a menu is displayed with numeric options for the user to select one. The options available are as follow: Add Student (to an existing class), Remove Student (to an existing class), Modify the labSize and modify the teachingHours of a professor. 
 
 ## Class diagram
 ![image](https://github.com/user-attachments/assets/57b03ac2-25e9-4f8f-8c8d-11e598e96653)
