@@ -5,38 +5,40 @@
 #include "Student.h"
 #include "Lab.h"
 #include <string>
+#include <vector>
 using namespace std;
 
-const int maxStudents = 18; 
-
 class Course {
-private:
-    int courseKey;
-    int courseDuration;
-    string courseName;
-    Teacher teacher;
-    Student students[maxStudents];
-    Lab lab;
-    int studentsEnrolled;
-
+    private:
+        //attributes
+        int courseKey;
+        int courseDuration;
+        string courseName;
+        Teacher teacher;
+        vector<Student> students;
+        Lab lab;
     
-public:
-    Course(int courseKey, int courseDuration, string courseName, Teacher teacher, Lab lab);
-    
-    int getCourseKey();
-    int getCourseDuration();
-    string getCourseName();
-    Teacher getTeacher();
-    Student getStudent();
-    Lab getLab();
+    public:
+        //constructor
+        Course(int courseKey, int courseDuration, string courseName, Teacher teacher, Lab lab);
 
-    void setCourseDuration(int courseDuration);
-    void addStudent(Student student);
-    void removeStudent(string studentID);
-    void setTeacher(Teacher teacher);
-    void setLab(Lab lab);
+        //getters
+        int getCourseKey();
+        int getCourseDuration();
+        string getCourseName();
+        Teacher getTeacher();
+        Student getStudent();
+        Lab getLab();
 
-    string getCourseDetails();
+        //setters
+        void setCourseDuration(int courseDuration);
+
+        //extra methods for student
+        void addStudent(Student student);
+        void removeStudent(string studentID);
+
+        //get full course data as a string
+        string getCourseDetails();
 };
 
 #endif
