@@ -1,25 +1,29 @@
 #include "Person.h"
 #include <string>
+#include <iostream>
 using namespace std;
 
-Person::Person(string _name, int _age, string _address){
+//Constructor
+Person::Person(string _name, int _age, string _address) {
   name=_name;
   age=_age;
   address=_address;
 }
 
-string Person::getName(){
+//getters
+string Person::getName() {
   return name;
 }
 
-int Person::getAge(){
+int Person::getAge() {
   return age;
 }
 
-string Person::getAddress(){
+string Person::getAddress() {
   return address;
 }
 
+//setters
 void Person::setName(string _name) {
     name=_name;
 }
@@ -32,6 +36,7 @@ void Person::setAddress(string _address) {
     address=_address;
 }
 
+//special method to return all data as a string
 string Person::getPersonDetails() {
     return "Name: " + name + ", Age: " + to_string(age) + ", Address: " + address;
 }
