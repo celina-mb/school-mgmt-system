@@ -27,7 +27,7 @@ class Course {
         int getCourseDuration();
         string getCourseName();
         Teacher getTeacher();
-        Student getStudent();
+
         Lab getLab();
 
         //setters
