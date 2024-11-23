@@ -7,18 +7,18 @@ using namespace std;
 
 class Teacher : public Person {
     private:
-    string teacherID;
-    int teachingHours;
+        string teacherID;
+        int teachingHours;
 
     public:
-    Teacher(string name, int age, string address, string teacherID, int teachingHours);
+        Teacher(string name, int age, string address, string teacherID, int teachingHours);
 
-    string getTeacherID();
-    int getTeachingHours();
+        string getTeacherID();
+        int getTeachingHours();
 
-    void setTeachingHours(int hours);
+        void setTeachingHours(int hours);
 
-    string getTeacherDetails();
+        string getTeacherDetails();
 };
 
 #endif
