@@ -5,18 +5,25 @@ using namespace std;
 
 class Lab{
     private:
-    int labCode;
-    string labType;
-    int labSize;
+        //attributes
+        int labCode;
+        string labType;
+        int labSize;
 
     public:
-    Lab(int labCode; string labType, int labSize);
+        //constructor
+        Lab(int labCode; string labType, int labSize);
 
-    void setLabSize(int labSize);
-    int getLabCode();
-    string getLabType();
-    int getLabSize();
-    string getLabDetails();
+        //setter
+        void setLabSize(int labSize);
+
+        //getters
+        int getLabCode();
+        string getLabType();
+        int getLabSize();
+
+        //special getter for all lab data
+        string getLabDetails();
 };
 
 #endif
